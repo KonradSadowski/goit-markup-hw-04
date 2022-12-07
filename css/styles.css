@@ -87,11 +87,11 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  fill: currentColor;
 }
 .contacts svg {
-  vertical-align: middle;
   margin-right: 10px;
-  fill: var(--text-grey);
+  vertical-align: middle;
 }
 .contacts :hover,
 .contacts :focus {
