@@ -39,6 +39,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .logo {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
@@ -105,6 +106,11 @@ header {
 .offer {
   background-color: var(--background-dark);
 }
+.offer > .container {
+  background-image: url('../images/background-main-image.jpg');
+  background-image: url('../images/background-main-image.jpg'), linear-gradient(#2f303a66);
+  max-width: 1600px;
+}
 .offer-content {
   padding: 200px 237px;
   justify-content: center;
@@ -152,7 +158,12 @@ header {
   padding: 0;
   margin: 0;
 }
-
+.articles div {
+  background-color: var(--button-grey-background);
+}
+.articles div svg {
+  margin: 25px 100px;
+}
 .articles h4 {
   font-weight: 700;
   font-size: 14px;
@@ -161,6 +172,7 @@ header {
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 10px;
+  padding-top: 30px;
 }
 
 .articles p {
@@ -169,6 +181,7 @@ header {
   color: var(--text-grey);
   letter-spacing: 0.03em;
   margin: 0;
+  
 }
 /* lorem ipsum ------------------------------------------------------------------------------------------- */
 
