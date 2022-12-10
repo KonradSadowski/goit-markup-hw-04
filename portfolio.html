@@ -20,7 +20,7 @@
       <div class="container">
         <div class="header-wrapper">
           <nav>
-            <a href="./index.html" class="logo"> Web<span class="studio-black">Studio</span> </a>
+            <a href="./index.html" class="logo">Web<span class="studio-black">Studio</span> </a>
             <ul class="menu-list">
               <li>
                 <a href="">Agencja</a>
@@ -34,13 +34,23 @@
             </ul>
           </nav>
           <div class="contacts">
-            <a href="mailto:info@devstudio.com" class="contact-mail">info@devstudio.com</a>
-            <a href="call:+48111111111" class="contact-tel">+48 111 111 111</a>
+            <a href="mailto:info@devstudio.com">
+              <svg width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+
+            <a href="call:+48111111111">
+              <svg width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111
+            </a>
           </div>
         </div>
       </div>
     </header>
-
     <main>
       <section class="section">
         <div class="container">
@@ -175,12 +185,39 @@
 
     <footer class="page-end">
       <div class="container">
-        <a href="./index.html" class="logo">Web<span class="studio-white">Studio</span></a>
-        <address class="addres-container">
-          <span class="headquarters">m. Warszawa, Aleje Jerozolimskie 21</span>
-          <a class="footer-mail" href="mailto:info@example.com"><span>info@example.com</span></a>
-          <a href="call:+48111111111">+48 111 111 111</a>
-        </address>
+        <div class="logo-address-container">
+          <a href="./index.html" class="logo">Web<span class="studio-white">Studio</span></a>
+          <address class="addres-container">
+            <span class="headquarters">m. Warszawa, Aleje Jerozolimskie 21</span>
+            <a class="footer-mail" href="mailto:info@example.com"><span>info@example.com</span></a>
+            <a href="call:+48111111111">+48 111 111 111</a>
+          </address>
+        </div>
+        <div class="footer-socials">
+          <p>DOŁĄCZ DO NAS</p>
+          <div class="socials-team">
+            <a href="">
+              <svg width="44px" height="44px">
+                <use width="20px" x="12px" href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg width="44px" height="44px">
+                <use width="20px" x="12px" href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg width="44px" height="44px">
+                <use width="20px" x="12px" href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg width="44px" height="44px">
+                <use width="20px" x="12px" href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
