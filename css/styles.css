@@ -9,6 +9,7 @@
   --logo-black: #000000;
   --main-black: #212121;
   --icon-grey: #d9d9d9;
+  --grey-icon-bg: #ffffff1a;
 }
 * {
   box-sizing: border-box;
@@ -238,7 +239,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0;
+  padding-top: 30px;
   gap: 10px;
 }
 .employee-name {
@@ -256,21 +257,22 @@ header {
 
 .socials-team {
   display: flex;
-  gap: 22px;
-  fill: var(--icon-grey);
+  gap: 10px;
   justify-content: center;
   align-items: center;
+  padding-top: 6px;
+  padding-bottom: 30px;
 }
 .socials-team svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  fill: var(--icon-grey);
 }
-
 .socials-team svg:hover,
 .socials-team svg:focus {
   fill: var(--text-white);
+  border-radius: 50%;
+  background-color: var(--light-blue);
 }
+
 /* our-team---------------------------------------------------------------------------------------------------- */
 
 /* portfolio buttons-------------------------------------------------------------------------------------------- */
@@ -340,10 +342,39 @@ header {
   letter-spacing: 0.03em;
 }
 /* portfolio boxes-------------------------------------------------------------------------------------------- */
+/* our customers --------------------------*/
+.our-customers-wrapper h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+.our-customers-wrapper > .client-logo {
+  display: inline-flex;
+  gap: 30px;
+}
+.our-customers-wrapper > .client-logo svg {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--icon-grey);
+}
+.our-customers-wrapper > .client-logo svg:hover,
+.our-customers-wrapper > .client-logo svg:focus {
+  fill: var(--light-blue);
+  border: 1px solid var(--light-blue);
+}
+/* our customers --------------------------*/
 /* footer------------------------------------------------------------------------------------------------------------ */
 .page-end {
   background-color: var(--background-dark);
-  padding-top: 60px;
+}
+.logo-address-container {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 60px 0px;
 }
 
 .studio-white {
@@ -383,4 +414,37 @@ header {
 .page-end address a:focus {
   color: var(--light-blue);
 }
+.footer-socials {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  fill: var(--icon-grey);
+  padding-left: 70px;
+  padding-top: 72px;
+}
+.footer-socials > .socials-team {
+  justify-content: left;
+}
+
+.footer-socials p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-white);
+  margin: 0px;
+}
+.footer-socials svg {
+  background-color: var(--grey-icon-bg);
+  border-radius: 50%;
+  fill: var(--text-white);
+}
+.footer-socials svg:hover,
+.footer-socials svg:focus {
+  fill: var(--text-white);
+  border-radius: 50%;
+  background-color: var(--light-blue);
+}
+
 /* footer------------------------------------------------------------------------------------------------------------ */
