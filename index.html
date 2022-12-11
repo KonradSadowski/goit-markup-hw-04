@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="svg-inject.js"></script>
-    <script>
-      SVGInject.setOptions({
-        makeIdsUnique: false, // do not make ids used within the SVG unique
-      });
-    </script>
     <title>Main Page</title>
     <link
       rel="stylesheet"
@@ -44,7 +38,7 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 300 300"
+                xmlns:ev="http://www.w3.org/2001/xml-events"
                 width="16px"
                 height="12px"
               >
@@ -54,7 +48,13 @@
             </a>
 
             <a href="call:+48111111111">
-              <svg width="10px" height="16px">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:ev="http://www.w3.org/2001/xml-events"
+                width="10px"
+                height="16px"
+              >
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111
