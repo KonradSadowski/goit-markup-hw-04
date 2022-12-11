@@ -27,6 +27,10 @@ body {
 .section {
   padding: 94px 0;
 }
+
+svg {
+  vertical-align: middle;
+}
 /* Header -------------------------------------------------------------------------------------------------------------------------*/
 header {
   border-bottom: 1px solid #ececec;
@@ -265,16 +269,15 @@ header {
   padding-bottom: 30px;
 }
 .socials-team a {
-  padding: 0px;
   fill: var(--icon-grey);
+  padding: 12px;
+  border-radius: 50%;
 }
 
 .socials-team a:hover,
 .socials-team a:focus {
   fill: var(--text-white);
-  border-radius: 50%;
   background-color: var(--light-blue);
-  outline: none;
 }
 
 /* our-team---------------------------------------------------------------------------------------------------- */
