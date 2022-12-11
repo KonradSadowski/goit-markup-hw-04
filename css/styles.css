@@ -264,14 +264,17 @@ header {
   padding-top: 6px;
   padding-bottom: 30px;
 }
-.socials-team svg {
+.socials-team a {
+  padding: 0px;
   fill: var(--icon-grey);
 }
-.socials-team svg:hover,
-.socials-team svg:focus {
+
+.socials-team a:hover,
+.socials-team a:focus {
   fill: var(--text-white);
   border-radius: 50%;
   background-color: var(--light-blue);
+  outline: none;
 }
 
 /* our-team---------------------------------------------------------------------------------------------------- */
@@ -367,15 +370,16 @@ header {
   display: inline-flex;
   gap: 30px;
 }
-.our-customers-wrapper > .client-logo svg {
+.our-customers-wrapper > .client-logo a {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--icon-grey);
 }
-.our-customers-wrapper > .client-logo svg:hover,
-.our-customers-wrapper > .client-logo svg:focus {
+.our-customers-wrapper > .client-logo a:hover,
+.our-customers-wrapper > .client-logo a:focus {
   fill: var(--light-blue);
   border: 1px solid var(--light-blue);
+  outline: none;
 }
 /* our customers --------------------------*/
 /* footer------------------------------------------------------------------------------------------------------------ */
@@ -455,6 +459,7 @@ header {
   fill: var(--text-white);
   border-radius: 50%;
   background-color: var(--light-blue);
+  outline: none;
 }
 
 /* footer------------------------------------------------------------------------------------------------------------ */
