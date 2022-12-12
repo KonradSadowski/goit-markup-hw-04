@@ -114,8 +114,8 @@ header {
   background-color: var(--background-dark);
 }
 .offer > .container {
-  background-image: url('../images/background-main-image.jpg');
-  background-image: url('../images/background-main-image.jpg'), linear-gradient(#2f303a66);
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+    url('../images/background-main-image.jpg');
   max-width: 1600px;
 }
 .offer-content {
@@ -377,6 +377,7 @@ header {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--icon-grey);
+  padding: 17.71px 32px 14.25px 32px;
 }
 .our-customers-wrapper > .client-logo a:hover,
 .our-customers-wrapper > .client-logo a:focus {
@@ -452,13 +453,13 @@ header {
   color: var(--text-white);
   margin: 0px;
 }
-.footer-socials svg {
+.footer-socials a {
   background-color: var(--grey-icon-bg);
   border-radius: 50%;
   fill: var(--text-white);
 }
-.footer-socials svg:hover,
-.footer-socials svg:focus {
+.footer-socials a:hover,
+.footer-socials a:focus {
   fill: var(--text-white);
   border-radius: 50%;
   background-color: var(--light-blue);
