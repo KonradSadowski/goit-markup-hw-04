@@ -8,7 +8,7 @@
   --footer-contacts: #ffffff99;
   --logo-black: #000000;
   --main-black: #212121;
-  --icon-grey: #d9d9d9;
+  --icon-grey: #afb1b8;
   --grey-icon-bg: #ffffff1a;
 }
 * {
@@ -270,8 +270,12 @@ header {
 }
 .socials-team a {
   fill: var(--icon-grey);
-  padding: 12px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .socials-team a:hover,
